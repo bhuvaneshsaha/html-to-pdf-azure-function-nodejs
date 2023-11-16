@@ -19,6 +19,12 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
+- script: |
+    npm install -g azure-functions-core-tools
+  displayName: 'Install Azure Functions Core Tools'
+- script: |
+    export PATH=$PATH:/path/to/azure-functions-core-tools
+  displayName: 'Add Azure Functions Core Tools to PATH'
 
 - task: AzureCLI@2
   inputs:
