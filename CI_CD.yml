@@ -31,5 +31,5 @@ steps:
     azureSubscription: 'MyAzFunc'
     scriptType: bash
     scriptLocation: inlineScript
-    inlineScript: func azure functionapp publish html-2-pdf-bhuvi --build remote
+    inlineScript: func azure functionapp publish html-2-pdf-bhuvi --typescript --build remote
   displayName: Deploying Function
