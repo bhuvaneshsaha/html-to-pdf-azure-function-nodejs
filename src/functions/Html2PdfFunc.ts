@@ -33,7 +33,7 @@ export async function Html2PdfFunc(request: HttpRequest, context: InvocationCont
 };
 
 app.http('Html2PdfFunc', {
-  methods: ['GET', 'POST'],
+  methods: ['POST'],
   authLevel: 'anonymous',
   handler: Html2PdfFunc
 });
